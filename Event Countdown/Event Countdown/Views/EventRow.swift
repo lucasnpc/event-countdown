@@ -54,12 +54,12 @@ struct EventRow: View {
 #Preview {
     List {
         EventRow(event: Event(
-            title: "Aniversário",
+            title: "Birthday",
             date: Date().addingTimeInterval(86400 * 5),
             textColor: .blue
         ))
         EventRow(event: Event(
-            title: "Férias",
+            title: "Vacation",
             date: Date().addingTimeInterval(-86400 * 2),
             textColor: .green
         ))

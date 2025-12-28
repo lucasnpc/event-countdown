@@ -30,7 +30,6 @@ struct Event: Identifiable, Comparable, Hashable, Equatable, Codable {
     }
 }
 
-// Wrapper para Color que é Codable, Hashable e Equatable
 struct CodableColor: Codable, Hashable, Equatable {
     var red: Double
     var green: Double
