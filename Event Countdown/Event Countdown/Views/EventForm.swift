@@ -27,7 +27,7 @@ struct EventForm: View {
         case .add:
             return "Add Event"
         case .edit(let event):
-            return "Edit (\(event.title))"
+            return "Edit \(event.title)"
         }
     }
     
@@ -39,7 +39,7 @@ struct EventForm: View {
         Form {
             Section {
                 TextField("Event Title", text: $title)
-                    .foregroundColor(textColor)
+                    .foregroundStyle(textColor)
                 
                 DatePicker("Date", selection: $date, displayedComponents: [.date, .hourAndMinute])
                 
